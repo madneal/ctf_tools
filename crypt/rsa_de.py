@@ -6,8 +6,6 @@ if __name__ == '__main__':
     for i in range(1000000):
         if i < 1000000:
             i = '0' * (6 - len(str(i))) + str(i)
-        if i == '877295':
-            print(13)
         password = str(i + salt).encode('utf-8')
         print("Has tried password:")
         print(password)
@@ -17,3 +15,5 @@ if __name__ == '__main__':
             print("flag{{{}_sha224_{"
                   "}}}".format(i, salt))
             exit()
+        hashlib.s
+
